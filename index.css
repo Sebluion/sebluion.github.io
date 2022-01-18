@@ -1,11 +1,12 @@
 p {
-  margin: 70px;
+  margin-left: 70px;
   font-family: "Helvetica", Arial, sans-serif;
 }
 h1 {
-  margin: 70px;
+  margin-left: 70px;
+  margin-top: 60px;
   font-family: "Helvetica", Arial, sans-serif;
 }
 img {
-	margin: 70px;
+	margin-left: 70px;
 }
