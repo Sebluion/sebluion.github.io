@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GPS UFC</title>
+<style>
+		h1 {color:cornflowerblue;}
+		p {color:azure;}
+		
+		
+		a:link, a:visited {
+			color: salmon;
+			padding: 0px 0px;
+			text-align: left;
+			text-decoration: none;
+			display: inline-block;
+		}
+	
+		a:hover, a:active {
+			color: cornflowerblue;
+		}
+	</style>
+	<link type="text/css" href="index.css" rel="stylesheet" />
+</head>
+<body style="background-color:black;">
+
+<h1><a href="index.html">GPS UFC</a></h1>
+<p>Click the button to get your coordinates.</p>
+
+<P><button onclick="getLocation()">--------</button><p>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude + "<br>Accuracy: " + position.coords.accuracy + "%";
+}
+</script>
+
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+</body>
+</html> 
+ 
