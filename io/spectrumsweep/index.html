@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>deine bisher gefundenen Orte</title>
+    
+    
+    <script>
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for(var i=0;i < ca.length;i++) {
+                var c = ca[i];
+                while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+            }
+            return null;
+        }
+   
+        
+        function set_hohenlindengefunden(){
+            if(!navigator.cookieEnabled){
+                alert("Cookis müssen aktiviert sein")
+            } else {
+                document.cookie = "hohenlindengefunden=true; expires=Fri, 4 Nov 2050 12:00:00 UTC; path=/"
+            }
+            
+            document.getElementById()
+        }
+        
+    </script>
+    
+    
+</head>
+<body>
+
+Hier sind alle Orte die du schon gefunden hast:<br>
+<br>
+<p> Hohenlinden: </p>
+<p id = "Hohenlinden_p">  </p>
+
+
+
+<script>
+    set_hohenlindengefunden();
+    
+    if(getCookie("hohenlindengefunden")){
+        document.getElementById("Hohenlinden_p").innerHTML = "gefunden"
+    }
+    
+</script>
+</body>
+
+
+</html>
