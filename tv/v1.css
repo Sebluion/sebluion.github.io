@@ -1,0 +1,43 @@
+.video-controls {
+   position: absolute;
+   width: 70px;
+   height: 20px;
+   cursor: pointer;
+   background-color: #FFF;
+   border: 1px solid #000;
+}
+
+#viddiv {
+	background: black;
+}
+
+#kanal-hoch-btn {
+	left: 5px;
+}
+#kanal-runter-btn {
+	left: 75px;
+}
+
+#play-btn {
+   left: 215px;
+}
+
+#pause-btn {
+   left: 215px;
+}
+
+#mute-btn {
+   left: 285px;
+}
+
+#unmute-btn {
+   left: 285px;
+}
+
+#stop-btn {
+   left: 285px;
+}
+
+#replay-btn {
+   left: 355px;
+}
